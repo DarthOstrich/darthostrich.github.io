@@ -2,10 +2,9 @@
 layout: main
 ---
 <main class="project">
-	<section id="contact-content">
-		<img id="project-image" src="{{ site.baseurl }}/{{ site.image_path }}/{{ page.image }}">
-		<h1 id="project-title">{{ page.title }}</h1>
-		<h2 id="project-date">{{ page.date }}</h2>
+	<section>
+		<img src="{{ site.image_path }}/{{ page.image }}" class="img-full">
+		<h1>{{ page.title }}</h1>
 
 		{{ content }}
 

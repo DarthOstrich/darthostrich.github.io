@@ -1,64 +1,25 @@
 ---
-layout: home
+layout: main
 title: Jared Nutt
 ---
 <section class="flex-block flex-block--wrapper flex-block--row">
   <article class="flex-block flex-block--grid">
     <h1 class="headline--underscore">Latest Projects</h1>
   </article>
-
-{% for project in site.projects %}
-<article class="flex-block flex-block--grid">
-  <div class="label">
-    <h2>{{ project.title }}</h2>
-  </div>
-  <img class="img-full" src="{{ site.image_path }}/{{ project.image }}" alt="">
-</article>
+  {% comment %}
+  Loop through all the projects
+  {% endcomment %}
+  {% for project in site.projects %}
+  <a href="{{ site.baseurl }}{{ project.url }}" class="portfolio-box">
+    <article class="flex-block flex-block--grid">
+      <div class="label">
+        <h2>{{ project.title }}</h2>
+      </div>
+      <img class="img-full" src="{{ site.image_path }}/{{ project.image }}" alt="">
+    </article>
+  </a>
 {% endfor %}
-
-  <!-- <article class="flex-block flex-block--grid">
-    <div class="label">
-      <h2>GC Packaging</h2>
-    </div>
-    <img class="img-full" src="./dist/img/GCpackaging.PNG" alt="">
-  </article>
-  <article class="flex-block flex-block--grid">
-    <div class="label">
-      <h2>NAICARI</h2>
-    </div>
-    <img class="img-full" src="./dist/img/Naicari.PNG" alt="Naicari">
-  </article>
-  <article class="flex-block flex-block--grid">
-    <div class="label">
-      <h2>Fierro</h2>
-    </div>
-    <img class="img-full" src="./dist/img/geofierro.PNG" alt="">
-  </article>
-  <article class="flex-block flex-block--grid">
-    <div class="label">
-      <h2>SIGHT UNSCENE</h2>
-    </div>
-    <img class="img-full" src="./dist/img/SU.PNG" alt="">
-  </article> -->
-  <!-- <article class="flex-block flex-block--grid">
-    <div class="label">
-      <h2>FreeStore</h2>
-    </div>
-    <img class="img-full" src="" alt="">
-  </article> -->
-  <!-- <article class="flex-block flex-block--grid">
-    <div class="label">
-      <h2>Foodie Shuffle</h2>
-    </div>
-    <img class="img-full" src="" alt="">
-  </article> -->
-  <!-- <article class="flex-block flex-block--grid">
-    <div class="label">
-      <h2>key_stroke</h2>
-    </div>
-    <img class="img-full" src="./dist/img/key_stroke_mockup.jpg" alt="">
-  </article>
-</section> -->
+</section>
 <section class="flex-block flex-block--wrapper">
   <h1 class="headline--underscore">Skills</h1>
   <div class="flex-block flex-block--centered flex-block--padding ">
@@ -76,37 +37,37 @@ title: Jared Nutt
       <h3>Languages</h3>
     </div>
     <ul class="skills-list flex-block--grid">
-      <li class="skills-list-icon"> <img src="./dist/img/icons/html5.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/html5.png" alt="" class="icon icon--skills"></li>
       <li class="skills-list-icon skills-list-icon">
-        <img src="./dist/img/icons/css3.png" alt="" class="icon icon--skills">
+        <img src="{{ site.image_path }}/icons/css3.png" alt="" class="icon icon--skills">
       </li>
       <li class="skills-list-icon skills-list-icon--child">
-        <img src="./dist/img/icons/sass.png" alt="" class="icon icon--skills">
+        <img src="{{ site.image_path }}/icons/sass.png" alt="" class="icon icon--skills">
       </li>
       <li class="skills-list-icon skills-list-icon">
-        <img src="./dist/img/icons/javascript.png" alt="" class="icon icon--skills">
+        <img src="{{ site.image_path }}/icons/javascript.png" alt="" class="icon icon--skills">
       </li>
       <li class="skills-list-icon">
-        <img src="./dist/img/icons/jquery.png" alt="" class="icon icon--skills">
+        <img src="{{ site.image_path }}/icons/jquery.png" alt="" class="icon icon--skills">
       </li>
       <li class="skills-list-icon">
-        <img src="./dist/img/icons/nodejs.png" alt="" class="icon icon--skills">
+        <img src="{{ site.image_path }}/icons/nodejs.png" alt="" class="icon icon--skills">
       </li>
-      <li class="skills-list-icon"> <img src="./dist/img/icons/php.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"> <img src="./dist/img/icons/mysql.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"> <img src="./dist/img/icons/mongo.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/php.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/mysql.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/mongo.png" alt="" class="icon icon--skills"></li>
       <!-- <h4>Some Familiarity</h4>
-      <li> <img src="./dist/img/icons/python.png" alt="" class="icon icon--skills"></li>
-      <li> <img src="./dist/img/icons/Swift.png" alt="" class="icon icon--skills"></li> -->
+      <li> <img src="{{ site.image_path }}/icons/python.png" alt="" class="icon icon--skills"></li>
+      <li> <img src="{{ site.image_path }}/icons/Swift.png" alt="" class="icon icon--skills"></li> -->
     </ul>
     <h3>Frameworks/Tools</h3>
     <ul class="skills-list">
-      <li class="skills-list-icon"><img src="./dist/img/icons/wordpress.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"><img src="./dist/img/icons/react-native.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"><img src="./dist/img/icons/shopify.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"> <img src="./dist/img/icons/npm.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"> <img src="./dist/img/icons/github.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"> <img src="./dist/img/icons/gulp.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/wordpress.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/react-native.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/shopify.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/npm.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/github.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/gulp.png" alt="" class="icon icon--skills"></li>
     </ul>
   </aside>
   <div class="flex-block flex-block--padding flex-block--centered">
@@ -125,8 +86,8 @@ title: Jared Nutt
   <aside class="flex-block flex-block--padding">
     <h3>Tools</h3>
     <ul class="skills-list">
-      <li class="skills-list-icon"><img src="./dist/img/icons/sketch.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"><img src="./dist/img/icons/adobe-xd.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/sketch.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/adobe-xd.png" alt="" class="icon icon--skills"></li>
     </ul>
   </aside>
 </section>
