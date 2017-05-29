@@ -1,0 +1,54 @@
+.icon {
+  width: 100px;
+}
+
+.icon--skills {
+  width: 100px;
+  margin: 1rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  //aligns the last line of the grid to the left
+  &::after {
+    content: '';
+    flex: auto; 
+  }
+}
+
+.skills-list-icon {
+  filter: grayscale(100%);
+  transition: filter $animation;
+}
+
+.skills-list-icon:hover {
+  filter: grayscale(0);
+  transition: filter $animation;
+}
+
+.icon--social {
+  width: 50px;
+}
+
+.icon__stroke {
+  fill-opacity: 0;
+  stroke: $dark-grey;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+}
+
+.icon__stroke--social {
+  transition: all $animation;
+  fill: $dark-grey;
+  fill-opacity: 0;
+  &:hover {
+    transition: all $animation;
+    fill-opacity: 1;
+  }
+}
+
+.icon__stroke--inner {
+  stroke-width: 2px;
+}

@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color-light;
+}
+
+.flex-block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+}
+
+.flex-block--grid {
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.flex-block--wrapper {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex-block--dark {
+  background: $bg-color-dark;
+  color: $font-color-light;
+}
+
+.flex-block--row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-block--padding {
+  padding: 1rem;
+}
+
+.flex-block--centered {
+  align-items: center;
+}
+
+.img-full {
+  width: 100%;
+}
+
+//adjustment of the grid for flow
+@media screen and (min-width:
+  map-get($breakpoints, 'medium')) {
+  .flex-block--grid {
+    flex-basis: 50%;
+  }
+}
+

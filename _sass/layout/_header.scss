@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+nav {
+  background: $header-footer-bg;
+  color: $font-color-light;
+  align-self: stretch;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+nav ul li:first-of-type {
+  margin-right: 1rem;
+}
+
+.logotype {
+  font-weight: normal;
+  &::before,&::after{
+    font-size: 1.5em;
+    font-weight: lighter;
+    line-height: .5;
+    color: $base1;
+  }
+  &::before{
+    content: "[ ";
+  }
+  &::after{
+    content: " ]";
+  }
+}

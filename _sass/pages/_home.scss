@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba($secondary-brand-color, 0.8);
+}
+.label h2 {
+  color: $font-color-light;
+
+}
+
+
+.skills-list-icon--child{}

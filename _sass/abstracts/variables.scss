@@ -1,0 +1,107 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// solarized color pallette
+$base03: rgb(0, 43, 54);
+$base02: rgb(7, 54, 66);
+$base01: rgb(88, 110, 117);
+$base00: rgb(101, 123, 131);
+$base0: rgb(131, 148, 150);
+$base1: rgb(147, 161, 161);
+$base2: rgb(238, 232, 213);
+$base3: rgb(253, 246, 227);
+$yellow: rgb(181, 137, 0);
+$orange: rgb(203, 75, 22);
+$red: rgb(220, 50, 47);
+$magenta: rgb(211, 54, 130);
+$violet: rgb(108, 113, 196);
+$blue: rgb(38, 139, 210);
+$cyan: rgb(42, 161, 152);
+$green: rgb(133, 153, 0);
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: $magenta !default;
+
+/// Secondary brand color
+/// @type Color
+$secondary-brand-color: $blue !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+/// Off white
+/// @type Color
+$off-white: rgb(242, 242, 242) !default;
+
+
+
+// @type Color
+$header-footer-bg: $base03 !default;
+$bg-color-dark: $base01 !default;
+$bg-color-light: $off-white !default;
+
+/// light gray
+/// @type Color
+$font-color-light: $off-white !default;
+
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
+
+
+// Animation presets
+$animation: 0.3s ease;
