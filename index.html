@@ -2,12 +2,21 @@
 layout: home
 title: Jared Nutt
 ---
-
 <section class="flex-block flex-block--wrapper flex-block--row">
   <article class="flex-block flex-block--grid">
     <h1 class="headline--underscore">Latest Projects</h1>
   </article>
-  <article class="flex-block flex-block--grid">
+
+{% for project in site.projects %}
+<article class="flex-block flex-block--grid">
+  <div class="label">
+    <h2>{{ project.title }}</h2>
+  </div>
+  <img class="img-full" src="{{ site.image_path }}/{{ project.image }}" alt="">
+</article>
+{% endfor %}
+
+  <!-- <article class="flex-block flex-block--grid">
     <div class="label">
       <h2>GC Packaging</h2>
     </div>
@@ -30,7 +39,7 @@ title: Jared Nutt
       <h2>SIGHT UNSCENE</h2>
     </div>
     <img class="img-full" src="./dist/img/SU.PNG" alt="">
-  </article>
+  </article> -->
   <!-- <article class="flex-block flex-block--grid">
     <div class="label">
       <h2>FreeStore</h2>
@@ -43,13 +52,13 @@ title: Jared Nutt
     </div>
     <img class="img-full" src="" alt="">
   </article> -->
-  <article class="flex-block flex-block--grid">
+  <!-- <article class="flex-block flex-block--grid">
     <div class="label">
       <h2>key_stroke</h2>
     </div>
     <img class="img-full" src="./dist/img/key_stroke_mockup.jpg" alt="">
   </article>
-</section>
+</section> -->
 <section class="flex-block flex-block--wrapper">
   <h1 class="headline--underscore">Skills</h1>
   <div class="flex-block flex-block--centered flex-block--padding ">
