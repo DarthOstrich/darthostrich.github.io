@@ -10,14 +10,14 @@ title: Jared Nutt
   Loop through all the projects
   {% endcomment %}
   {% for project in site.projects %}
-  <a href="{{ site.baseurl }}{{ project.url }}" class="portfolio-box">
     <article class="flex-block flex-block--grid">
+      <a href="{{ site.baseurl }}{{ project.url }}">
       <div class="label">
         <h2>{{ project.title }}</h2>
       </div>
       <img class="img-full" src="{{ site.image_path }}/{{ project.image }}" alt="">
-    </article>
-  </a>
+    </a>
+  </article>
 {% endfor %}
 </section>
 <section class="flex-block flex-block--wrapper">
