@@ -1,0 +1,12 @@
+---
+layout: project
+title: GC Packaging
+image: GCpackaging.PNG
+image_banner: GCpackaging.PNG
+published: true
+---
+
+h1. GC Packaging
+
+Texas based card producers wanted to update their old website to more modern look. In this project, I was hired to develop their website from scratch. I started with wireframes and mockups, which went through several rounds. Once GC Packaging signed off, I hand-coded the website and made small adjustments to the layout as the project went forward.
+
