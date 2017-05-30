@@ -38,7 +38,7 @@ h2 {
 h3 {
   font-size: 2rem;
   margin: 1rem 0;
-  margin-left: 1rem;
+  // margin-left: 1rem;
   text-align: left;
   position: relative;
   // &::before {
@@ -76,7 +76,14 @@ h6 {
   text-align: center;
 }
 
+.h6--role {
+  font-size: 1.6rem;
+  margin-top: 0;
+  text-align: left;
+}
+
 p {
+  margin: 1rem 0;
 }
 
 blockquote {

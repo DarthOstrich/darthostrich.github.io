@@ -46,11 +46,18 @@ body {
   width: 100%;
 }
 
+
+
 //adjustment of the grid for flow
 @media screen and (min-width:
   map-get($breakpoints, 'medium')) {
   .flex-block--grid {
     flex-basis: 50%;
+  }
+  
+  .img--project-piece {
+    margin: 0 auto;
+    width: 80%;
   }
 }
 

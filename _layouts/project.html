@@ -1,12 +1,10 @@
 ---
 layout: main
 ---
-<main class="project">
-	<section>
-		<img src="{{ site.image_path }}/{{ page.image_banner }}" class="img-full">
-
+<img src="{{ site.image_path }}/{{ page.image_banner }}" class="img-full">
+<section class="flex-block flex-block--wrapper flex-block--row flex-block--padding">
+	<article class="flex-block flex-block--grid">
 		{{ content }}
-
-	</section>
-
-</main>
+	</article>
+	<a href="#" class="a--scroll-top">Top</a>
+</section>
