@@ -2,7 +2,7 @@
 layout: project
 title: GC Packaging
 image: GCpackaging2.jpg
-image_banner: GCpackaging3.PNG
+image_banner: GCpackaging3.png
 published: true
 external_url: http://gcpackaging.com
 role: Design and Develop
