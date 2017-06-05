@@ -26,6 +26,11 @@ h1 {
     max-width: 50px;
     width: 100%;
     margin: 0 auto;
+    transition: $animation;
+  }
+  &:hover::after{
+    max-width: 100px;
+    transition: $animation;
   }
 }
 
