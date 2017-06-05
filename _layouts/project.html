@@ -4,7 +4,23 @@ layout: main
 <img src="{{ site.image_path }}/{{ page.image_banner }}" class="img-full">
 <section class="flex-block flex-block--wrapper flex-block--row flex-block--padding">
 	<article class="flex-block flex-block--grid">
+			<h1 class="h1--project-label">
+				<a href="{{page.external_url}}" class="link--light">{{ page.title }}</a>
+			</h1>
+
+
+		<h2> Description </h2>
+
+		<p> {{ page.description }} </p>
+
+		<h6 class="h6--role">
+			<strong>Role</strong> - {{ page.role }} </br>
+			<strong>Technology</strong> - {{ page.tech }} </br>
+			<a href="{{page.external_url}}" target="_blank">Link</a>
+		</h6>
+
 		{{ content }}
+
 	</article>
 	<a href="#" class="a--scroll-top">Top</a>
 </section>

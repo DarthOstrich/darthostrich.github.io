@@ -8,7 +8,7 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Titillium Web', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -68,14 +68,14 @@ $bg-color-dark: $base01 !default;
 $bg-color-light: $off-white !default;
 
 /// @type Color
-$font-color-light: $off-white !default;
+$font-color-light: $light-grey !default;
 
 
 
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1180px !default;
+$max-width: 136rem !default;
 
 
 
