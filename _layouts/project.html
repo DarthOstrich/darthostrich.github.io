@@ -16,7 +16,9 @@ layout: main
 		<h6 class="h6--role">
 			<strong>Role</strong> - {{ page.role }} </br>
 			<strong>Technology</strong> - {{ page.tech }} </br>
+			{% if page.external_url != null %}
 			<a href="{{page.external_url}}" target="_blank">Link</a>
+			{% endif %}
 		</h6>
 
 		{{ content }}
