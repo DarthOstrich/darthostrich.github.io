@@ -1,6 +1,12 @@
 .form{
- @extend .flex-block;
- @extend .flex-block--padding;
+    @extend .flex-block;
+    @extend .flex-block--padding;
+    max-width: 50rem;
+    margin: 2rem auto;
+    justify-content: center;
+    align-content: space-between;
+    background: $bg-color-dark;
+    padding: 2rem;
 }
 .form__label {
     @extend h3;

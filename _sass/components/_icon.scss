@@ -1,9 +1,9 @@
 .icon {
-  width: 100px;
+  max-width: 10rem;
 }
 
 .icon--skills {
-  width: 100px;
+  width: 10rem;
   margin: 1rem;
 }
 
@@ -29,7 +29,8 @@
 }
 
 .icon--social {
-  width: 50px;
+  height: 4rem;
+  margin: 0 1rem;
 }
 
 .icon__stroke {
@@ -41,8 +42,8 @@
 
 .icon__stroke--social {
   transition: all $animation;
-  stroke: $brand-color;
-  fill: $brand-color;  
+  stroke: $link;
+  fill: $link;  
   fill-opacity: 0;
   &:hover {
     transition: all $animation;

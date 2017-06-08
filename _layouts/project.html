@@ -5,11 +5,15 @@ layout: main
 <section class="flex-block flex-block--wrapper flex-block--row flex-block--padding">
 	<article class="flex-block flex-block--grid">
 			<h1 class="h1--project-label">
-				<a href="{{page.external_url}}" class="link--light">{{ page.title }}</a>
+				{% if page.external_url != null %}
+					<a href="{{page.external_url}}" class="link--light" target="_blank">{{ page.title }}</a>
+				{% else %}
+					{{ page.title }}
+				{% endif %}
 			</h1>
 
 
-		<h2> Description </h2>
+		<h3> Description </h3>
 
 		<p> {{ page.description }} </p>
 

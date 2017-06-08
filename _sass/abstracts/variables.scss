@@ -32,10 +32,6 @@ $blue: rgb(38, 139, 210);
 $cyan: rgb(42, 161, 152);
 $green: rgb(133, 153, 0);
 
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
 /// Main brand color
 /// @type Color
 $brand-color: $magenta !default;
@@ -60,15 +56,23 @@ $dark-grey: rgb(68, 68, 68) !default;
 /// @type Color
 $off-white: rgb(242, 242, 242) !default;
 
-
-
 // @type Color
 $header-footer-bg: $base03 !default;
 $bg-color-dark: $base01 !default;
 $bg-color-light: $off-white !default;
 
+/// Copy text color
 /// @type Color
-$font-color-light: $light-grey !default;
+$text-color: rgb(34, 34, 34) !default;
+$text-color-light: $light-grey !default;
+
+
+/// link color
+/// @type Color
+$link: $yellow !default;
+$link--dark: darken($yellow, 20) !default;
+$link--light: lighten($yellow, 10) !default;
+
 
 
 
@@ -103,4 +107,4 @@ $base-url: '/assets/' !default;
 
 
 // Animation presets
-$animation: 0.3s ease;
+$animation: 0.3s ease-out;

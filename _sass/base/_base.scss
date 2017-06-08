@@ -23,21 +23,21 @@ html {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $link;
   transition: color $animation;
   text-decoration: none;
 
   @include on-event {
     transition: color $animation;
-    color: darken($brand-color, 20);
+    color: darken($link, 20);
     // text-decoration: underline;
   }
 }
 
 .link--light{
-  color: $font-color-light;
+  color: $link--light;
   @include on-event {
-    color: darken($font-color-light, 20);
+    color: darken($link--light, 20);
     // text-decoration: underline;
   }
 }
