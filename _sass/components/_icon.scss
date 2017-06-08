@@ -41,7 +41,8 @@
 
 .icon__stroke--social {
   transition: all $animation;
-  fill: $dark-grey;
+  stroke: $brand-color;
+  fill: $brand-color;  
   fill-opacity: 0;
   &:hover {
     transition: all $animation;
