@@ -1,0 +1,15 @@
+.form{
+ @extend .flex-block;
+ @extend .flex-block--padding;
+}
+.form__label {
+    @extend h3;
+    font-size: 2rem;
+}
+.form__input--text{
+
+}
+
+.form__input {
+
+}

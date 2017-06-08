@@ -7,9 +7,13 @@ https://formspree.io/
 {% endcomment %}
 <section>
 	<h1>Contact Me</h1>
-	<form action="https://formspree.io/your@email.com" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
+	<form action="https://formspree.io/your@email.com" method="POST" class="form">
+    <label for="name" class="form__label">Name</label>
+    <input type="text" name="name" placeholder="Jane Doe" class="form__input form__input--text">
+    <label for="_replyto" class="form__label">Email</label>
+    <input type="email" name="_replyto" placeholder="name@email.org" class="form__input form__input--email">
+    <label for="message" class="form__label">Your Message</label>
+    <textarea type="email" name="message" placeholder="Just a couple words on what you'd like to discuss" class="form__textarea"></textarea>
     <button type="submit">Send</button>
 </form>
 </section>
