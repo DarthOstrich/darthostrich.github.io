@@ -5,17 +5,38 @@
     margin: 2rem auto;
     justify-content: center;
     align-content: space-between;
-    background: $bg-color-dark;
+    // background: $mid-grey;
     padding: 2rem;
 }
 .form__label {
     @extend h3;
     font-size: 2rem;
 }
-.form__input--text{
-
-}
-
 .form__input {
-
+    padding: .5em;
+    // background: $mid-grey;
+    background: $bg-color-light;
+    border:  solid 1px $bg-color-dark;
+    width: 100%;
+}
+.form__button{
+    margin: 1rem 0 1rem auto;
+    width: 50%;
+    padding: .5em;
+    text-transform: uppercase;
+    background: $link;
+    color: $link--dark;
+    border: none;
+    cursor: pointer;
+    &:active{
+        background: $link--dark;
+        color: $link;
+    }
+}
+.form__textarea{
+    padding: .5em;
+    // background: $mid-grey;
+    background: $bg-color-light;
+    border:  solid 1px $bg-color-dark;
+    width: 100%;
 }
