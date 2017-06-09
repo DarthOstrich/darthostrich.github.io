@@ -11,10 +11,18 @@
   justify-content: center;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba($secondary-brand-color, 0.8);
+  flex-direction: column;
 }
-.label h2 {
-  color: $text-color-light;
+.label__title {
+  color: $link--light;
+  margin: 0;
 
+}
+.label__subtitle {
+  color: $text-color-light;
+  margin: 0;  
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 
