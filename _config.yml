@@ -37,6 +37,8 @@ markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-textile-converter
+  - jekyll-assets
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -51,3 +53,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+
+assets:
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
