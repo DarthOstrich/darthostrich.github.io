@@ -26,8 +26,8 @@
   text-transform: uppercase;
 }
 
-@media screen and (min-width:
-  map-get($breakpoints, 'medium')) {
+// Check to see if device has hover capability
+@media(hover: hover) {
     // Label animation stuff
     .label__title {transform: translateY(-10rem); transition: transform $animation;}
     .label__subtitle {transform: translateY(10rem); transition: transform $animation;}

@@ -31,6 +31,49 @@ github:  https://github.com/DarthOstrich
 codepen: https://codepen.io/DarthOstrich
 medium: https://medium.com/@jarednutt27
 
+#skills list
+skills:
+  - name: html5
+    image: html5.png
+  - name: css
+    image: css3.png
+  - name: sass
+    image: sass.png
+  - name: javascript
+    image: javascript.png
+  - name: jquery
+    image: jquery.png
+  - name: nodejs
+    image: nodejs.png
+  - name: php
+    image: php.png
+  - name: mysql
+    image: mysql.png
+  - name: mongo
+    image: mongo.png
+
+#frameworks
+frameworks:
+  - name: wordpress
+    image: wordpress.png
+  - name: react-native
+    image: react-native.png
+  - name: shopify
+    image: shopify.png
+  - name: npm
+    image: npm.png
+  - name: github
+    image: github.png
+  - name: gulp
+    image: gulp.png
+
+#tools
+tools:
+  - name: sketch
+    image: sketch.png
+  - name: adobe-xd
+    image: adobe-xd.png
+
 
 # File structure settings
 image_path:         /images

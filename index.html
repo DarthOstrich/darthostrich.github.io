@@ -6,9 +6,7 @@ title: Jared Nutt
   <article class="flex-block flex-block--grid">
     <h1 class="headline--underscore">Latest Projects</h1>
   </article>
-  {% comment %}
-  Loop through all the projects
-  {% endcomment %}
+  {% comment %} Loop through all the projects {% endcomment %}
   {% for project in site.projects %}
     <article class="flex-block flex-block--grid">
       <a href="{{ site.baseurl }}{{ project.url }}">
@@ -35,10 +33,13 @@ title: Jared Nutt
   </div>
   <aside class="flex-block flex-block--wrapper flex-block--row flex-block--padding">
     <div class="flex-block flex-block--grid">
-      <h3>Languages</h3>
+      <h3 class="h3--align-right">Languages</h3>
     </div>
     <ul class="skills-list flex-block--grid">
-      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/html5.png" alt="" class="icon icon--skills"></li>
+      {% for skill in site.skills %}
+        <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/{{ skill.image }}" alt="{{ skill.name }}" class="icon icon--skills"></li>
+      {% endfor %}
+      <!--<li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/html5.png" alt="" class="icon icon--skills"></li>
       <li class="skills-list-icon skills-list-icon">
         <img src="{{ site.image_path }}/icons/css3.png" alt="" class="icon icon--skills">
       </li>
@@ -56,7 +57,7 @@ title: Jared Nutt
       </li>
       <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/php.png" alt="" class="icon icon--skills"></li>
       <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/mysql.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/mongo.png" alt="" class="icon icon--skills"></li>
+      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/mongo.png" alt="" class="icon icon--skills"></li>-->
       <!-- <h4>Some Familiarity</h4>
       <li> <img src="{{ site.image_path }}/icons/python.png" alt="" class="icon icon--skills"></li>
       <li> <img src="{{ site.image_path }}/icons/Swift.png" alt="" class="icon icon--skills"></li> -->
@@ -64,15 +65,18 @@ title: Jared Nutt
   </aside>
   <aside class="flex-block flex-block--wrapper flex-block--row flex-block--padding">
       <div class="flex-block flex-block--grid">
-          <h3>Frameworks/Tools</h3>
+          <h3 class="h3--align-right">Frameworks/Tools</h3>
       </div>
       <ul class="skills-list flex-block--grid">
-        <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/wordpress.png" alt="" class="icon icon--skills"></li>
+        {% for framework in site.frameworks %}
+          <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/{{ framework.image }}" alt="{{ framework.name }}" class="icon icon--skills"></li>
+        {% endfor %}
+        <!--<li class="skills-list-icon"><img src="{{ site.image_path }}/icons/wordpress.png" alt="" class="icon icon--skills"></li>
         <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/react-native.png" alt="" class="icon icon--skills"></li>
         <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/shopify.png" alt="" class="icon icon--skills"></li>
         <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/npm.png" alt="" class="icon icon--skills"></li>
         <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/github.png" alt="" class="icon icon--skills"></li>
-        <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/gulp.png" alt="" class="icon icon--skills"></li>
+        <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/gulp.png" alt="" class="icon icon--skills"></li>-->
       </ul>
     </aside>
     <div class="flex-block flex-block--centered flex-block--padding ">
@@ -90,7 +94,7 @@ title: Jared Nutt
     </div>
     <aside class="flex-block flex-block--wrapper flex-block--row flex-block--padding">
       <div class="flex-block flex-block--grid">
-          <h3>Tools</h3>
+          <h3 class="h3--align-right">Tools</h3>
       </div>
       <ul class="skills-list">
         <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/sketch.png" alt="" class="icon icon--skills"></li>

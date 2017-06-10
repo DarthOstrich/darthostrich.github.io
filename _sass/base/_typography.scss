@@ -46,23 +46,11 @@ h3 {
   // margin-left: 1rem;
   text-align: left;
   position: relative;
-  // &::before {
-  //   content: "";
-  //   display: block;
-  //   background-color: $brand-color;
-  //   height: 1px;
-  //   max-width: 50px;
-  //   /* margin: 0 auto; */
-  //   position: absolute;
-  //   bottom: 0;
-  //   padding: 0 5%;
-  // }
   &::after {
     content: " |";
     color: $brand-color;
   }
 }
-
 h4 {
   font-size: 1.8rem;
   margin: 1rem 0;
