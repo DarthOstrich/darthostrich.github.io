@@ -6,8 +6,13 @@ nav {
   color: $text-color-light;
   align-self: stretch;
   align-items: baseline;
-  @include justify-content(space-between);
   @include flex-direction(row);
+}
+.bracket{
+  font-size: 3.5rem;
+  font-weight: 200;
+  line-height: 0.5;
+  color: $base1;
 }
 
 nav ul li {
@@ -21,16 +26,5 @@ nav ul li:first-of-type {
 
 .logotype {
   font-weight: normal;
-  &::before,&::after{
-    font-size: 1.5em;
-    font-weight: lighter;
-    line-height: .5;
-    color: $base1;
-  }
-  &::before{
-    content: "[ ";
-  }
-  &::after{
-    content: " ]";
-  }
+  display: inline-block;
 }

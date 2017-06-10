@@ -48,6 +48,9 @@ body {
 .flex-block--flex-end {
   @include justify-content(flex-end);
 }
+.flex-block--flex-space-b {
+  @include justify-content(space-between);
+}
 
 .img-full {
   width: 100%;
