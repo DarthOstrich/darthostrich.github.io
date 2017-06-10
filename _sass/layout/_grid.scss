@@ -42,6 +42,12 @@ body {
   align-items: center;
   @include justify-content(center);
 }
+.flex-block--full {
+  flex-basis: 100%;
+}
+.flex-block--flex-end {
+  @include justify-content(flex-end);
+}
 
 .img-full {
   width: 100%;

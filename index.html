@@ -20,66 +20,40 @@ title: Jared Nutt
 {% endfor %}
 </section>
 <section class="flex-block flex-block--wrapper">
-  <h1 class="headline--underscore">Skills</h1>
-  <div class="flex-block flex-block--centered flex-block--padding ">
-    <h2>Web Development</h2>
-    <svg data-name="terminal-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 117.5" class="icon">
-        <title>portfolio-logo-set</title>
-        <path d="M29.42,44.15V46.9L17.26,54.48l-1.44-2,11.3-7-11.3-6.94,1.31-2Z" style="fill:#231f20"/>
-        <path d="M30.92,52h16v2.37h-16Z" style="fill:#231f20"/>
-        <rect x="2" y="2" width="134" height="113.5" rx="10" ry="10" class="icon__stroke"/>
-        <line x1="1.79" y1="25.17" x2="136.21" y2="25.17" class="icon__stroke icon__stroke--inner"/>
-    </svg>
-  </div>
-  <aside class="flex-block flex-block--wrapper flex-block--row flex-block--padding">
-    <div class="flex-block flex-block--grid">
-      <h3 class="h3--align-right">Languages</h3>
+  <article class="flex-block flex-block--row flex-block--flex-end">
+    <h1 class="headline--underscore flex-block--full">Skills</h1>
+    <div class="flex-block flex-block--centered flex-block--grid">
+      <h2>Web Development</h2>
+      <svg data-name="terminal-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 117.5" class="icon">
+          <title>portfolio-logo-set</title>
+          <path d="M29.42,44.15V46.9L17.26,54.48l-1.44-2,11.3-7-11.3-6.94,1.31-2Z" style="fill:#231f20"/>
+          <path d="M30.92,52h16v2.37h-16Z" style="fill:#231f20"/>
+          <rect x="2" y="2" width="134" height="113.5" rx="10" ry="10" class="icon__stroke"/>
+          <line x1="1.79" y1="25.17" x2="136.21" y2="25.17" class="icon__stroke icon__stroke--inner"/>
+      </svg>
     </div>
-    <ul class="skills-list flex-block--grid">
-      {% for skill in site.skills %}
-        <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/{{ skill.image }}" alt="{{ skill.name }}" class="icon icon--skills"></li>
-      {% endfor %}
-      <!--<li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/html5.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon skills-list-icon">
-        <img src="{{ site.image_path }}/icons/css3.png" alt="" class="icon icon--skills">
-      </li>
-      <li class="skills-list-icon skills-list-icon--child">
-        <img src="{{ site.image_path }}/icons/sass.png" alt="" class="icon icon--skills">
-      </li>
-      <li class="skills-list-icon skills-list-icon">
-        <img src="{{ site.image_path }}/icons/javascript.png" alt="" class="icon icon--skills">
-      </li>
-      <li class="skills-list-icon">
-        <img src="{{ site.image_path }}/icons/jquery.png" alt="" class="icon icon--skills">
-      </li>
-      <li class="skills-list-icon">
-        <img src="{{ site.image_path }}/icons/nodejs.png" alt="" class="icon icon--skills">
-      </li>
-      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/php.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/mysql.png" alt="" class="icon icon--skills"></li>
-      <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/mongo.png" alt="" class="icon icon--skills"></li>-->
-      <!-- <h4>Some Familiarity</h4>
-      <li> <img src="{{ site.image_path }}/icons/python.png" alt="" class="icon icon--skills"></li>
-      <li> <img src="{{ site.image_path }}/icons/Swift.png" alt="" class="icon icon--skills"></li> -->
-    </ul>
-  </aside>
-  <aside class="flex-block flex-block--wrapper flex-block--row flex-block--padding">
-      <div class="flex-block flex-block--grid">
-          <h3 class="h3--align-right">Frameworks/Tools</h3>
-      </div>
+    <aside class="flex-block flex-block--grid flex-block--padding">
       <ul class="skills-list flex-block--grid">
-        {% for framework in site.frameworks %}
-          <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/{{ framework.image }}" alt="{{ framework.name }}" class="icon icon--skills"></li>
+        <h3 class="flex-block--full">Languages</h3>
+        {% for skill in site.skills %}
+          <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/{{ skill.image }}" alt="{{ skill.name }}" class="icon icon--skills"></li>
         {% endfor %}
-        <!--<li class="skills-list-icon"><img src="{{ site.image_path }}/icons/wordpress.png" alt="" class="icon icon--skills"></li>
-        <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/react-native.png" alt="" class="icon icon--skills"></li>
-        <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/shopify.png" alt="" class="icon icon--skills"></li>
-        <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/npm.png" alt="" class="icon icon--skills"></li>
-        <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/github.png" alt="" class="icon icon--skills"></li>
-        <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/gulp.png" alt="" class="icon icon--skills"></li>-->
+        <!-- <h4>Some Familiarity</h4>
+        <li> <img src="{{ site.image_path }}/icons/python.png" alt="" class="icon icon--skills"></li>
+        <li> <img src="{{ site.image_path }}/icons/Swift.png" alt="" class="icon icon--skills"></li> -->
       </ul>
     </aside>
-    <div class="flex-block flex-block--centered flex-block--padding ">
+    <aside class="flex-block flex-block--grid flex-block--padding">
+      <ul class="skills-list flex-block--grid">
+        <h3 class="flex-block--full">Frameworks/Tools</h3>
+          {% for framework in site.frameworks %}
+            <li class="skills-list-icon"> <img src="{{ site.image_path }}/icons/{{ framework.image }}" alt="{{ framework.name }}" class="icon icon--skills"></li>
+          {% endfor %}
+        </ul>
+      </aside>
+  </article>
+  <article class="flex-block flex-block--row flex-block--flex-end">
+    <div class="flex-block flex-block--grid flex-block--centered">
       <h2>UI/UX Development</h2>
       <svg data-name="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 117.5" class="icon">
           <rect x="2" y="2" width="134" height="113.5" rx="10" ry="10" class="icon__stroke"/>
@@ -92,15 +66,16 @@ title: Jared Nutt
           <rect x="8" y="92" width="122" height="15.33" style="fill:#c2c2c1"/>
       </svg>
     </div>
-    <aside class="flex-block flex-block--wrapper flex-block--row flex-block--padding">
+    <aside class="flex-block flex-block--grid flex-block--padding">
       <div class="flex-block flex-block--grid">
-          <h3 class="h3--align-right">Tools</h3>
+          <h3 class="flex-block--full">Tools</h3>
       </div>
       <ul class="skills-list">
         <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/sketch.png" alt="" class="icon icon--skills"></li>
         <li class="skills-list-icon"><img src="{{ site.image_path }}/icons/adobe-xd.png" alt="" class="icon icon--skills"></li>
       </ul>
     </aside>
+    </article>
 </section>
 <section class="flex-block">
   <h1 class="headline--underscore">About</h1>
