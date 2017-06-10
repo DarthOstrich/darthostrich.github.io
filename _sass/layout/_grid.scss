@@ -1,13 +1,13 @@
 body {
-  display: flex;
-  flex-direction: column;
+  @include flexbox();
+  @include flex-direction(column);
   background-color: $bg-color-light;
 }
 
 .flex-block {
-  display: flex;
+  @include flexbox();
   flex-wrap: wrap;
-  flex-direction: column;
+  @include flex-direction(column);
   padding: 0;
   position: relative;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .flex-block--row {
-  flex-direction: row;
+  @include flex-direction(row);
   align-items: center;
 }
 
@@ -40,7 +40,7 @@ body {
 
 .flex-block--centered {
   align-items: center;
-  justify-content: center;
+  @include justify-content(center);
 }
 
 .img-full {

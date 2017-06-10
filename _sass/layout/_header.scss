@@ -6,8 +6,8 @@ nav {
   color: $text-color-light;
   align-self: stretch;
   align-items: baseline;
-  justify-content: space-between;
-  flex-direction: row;
+  @include justify-content(space-between);
+  @include flex-direction(row);
 }
 
 nav ul li {

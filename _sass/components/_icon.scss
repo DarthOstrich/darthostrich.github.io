@@ -8,9 +8,9 @@
 }
 
 .skills-list {
-  display: flex;
+  @include flexbox();
   flex-wrap: wrap;
-  justify-content: space-between;
+  @include justify-content(space-between);
   //aligns the last line of the grid to the left
   &::after {
     content: '';

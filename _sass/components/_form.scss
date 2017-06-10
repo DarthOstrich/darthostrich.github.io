@@ -3,8 +3,8 @@
     @extend .flex-block--padding;
     max-width: 50rem;
     margin: 2rem auto;
-    justify-content: center;
-    align-content: space-between;
+    @include justify-content(center);
+    @include align-content(space-between)
     // background: $mid-grey;
     padding: 2rem;
 }

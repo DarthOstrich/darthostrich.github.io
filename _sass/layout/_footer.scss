@@ -2,7 +2,7 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 footer {
-  display: flex;
+  @include flexbox();
   background: $header-footer-bg;
   color: $text-color-light;
 }
