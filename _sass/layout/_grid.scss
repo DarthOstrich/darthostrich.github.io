@@ -1,7 +1,7 @@
 body {
+  background-color: $bg-color-light;
   @include flexbox();
   @include flex-direction(column);
-  background-color: $bg-color-light;
 }
 
 .flex-block {
