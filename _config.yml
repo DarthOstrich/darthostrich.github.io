@@ -16,11 +16,14 @@
 title: Jared Nutt
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Jared Nutt is a Los Angeles based Web Developer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://darthostrich.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://designnutt.com" # the base hostname & protocol for your site, e.g. http://example.com
+author: Jared Nutt
+
+# More SEO stuff
+webmaster_verifications:
+  google: 1234
 
 #social links
 twitter: https://twitter.com/design_nutt
@@ -37,7 +40,7 @@ markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-textile-converter
-  - jekyll-autoprefixer
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
@@ -53,8 +56,3 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-
-  # autoprefixer
-  autoprefixer:
-    browsers:
-      - last 2 versions
