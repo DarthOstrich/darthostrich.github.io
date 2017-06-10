@@ -4,7 +4,7 @@
     max-width: 50rem;
     margin: 2rem auto;
     @include justify-content(center);
-    @include align-content(space-between)
+    @include align-content(space-between);
     // background: $mid-grey;
     padding: 2rem;
 }
