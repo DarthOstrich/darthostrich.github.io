@@ -80,7 +80,19 @@ p {
 }
 
 blockquote {
+  position: relative;
   font-weight: 200;
   font-size: 4rem;
   padding: 4rem;
+  color: $secondary-brand-color;
+  &::before{
+    content: "\201C";
+    font-family: serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: $mid-grey;
+    font-size: 20rem;
+    opacity: 0.3;
+  }
 }
