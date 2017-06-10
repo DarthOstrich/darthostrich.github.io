@@ -45,3 +45,8 @@ a {
 ul li {
   list-style: none;
 }
+
+// Fix issue with images having extra space at the bottom
+img {
+  display: block;
+}

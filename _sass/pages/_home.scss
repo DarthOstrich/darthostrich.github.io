@@ -1,9 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.img--blur {
-  // filter: blur(2px);
-}
+// .img--blur {
+//   filter: blur(2px);
+// }
 .label {
   position: absolute;
   @include flexbox();
@@ -12,6 +12,7 @@
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba($secondary-brand-color, 0.8);
   @include flex-direction(column);
+  overflow: hidden;
 }
 .label__title {
   color: $link--light;
@@ -25,5 +26,26 @@
   text-transform: uppercase;
 }
 
-
-.skills-list-icon--child{}
+@media screen and (min-width:
+  map-get($breakpoints, 'medium')) {
+    // Label animation stuff
+    .label__title {transform: translateY(-10rem); transition: transform $animation;}
+    .label__subtitle {transform: translateY(10rem); transition: transform $animation;}
+    .label{
+      opacity: 0;
+      transition: opacity $animation;      
+      &:hover{
+        transition: opacity $animation;
+        opacity: 1;
+      }
+      // animate the hoverstate for the title and subtitle
+      &:hover .label__title {
+        transition: transform $animation;
+        transform: translateY(0rem);
+      }
+      &:hover .label__subtitle {
+        transition: transform $animation;
+        transform: translateY(0rem);
+      }
+    }
+  }
