@@ -6,16 +6,16 @@ body {
 
 .flex-block {
   @include flexbox();
-  flex-wrap: wrap;
+  @include flex-wrap(wrap);
   @include flex-direction(column);
   padding: 0;
   position: relative;
 }
 
 .flex-block--grid {
-  flex-basis: 100%;
-  flex-grow: 0;
-  flex-shrink: 1;
+  @include flex-basis(100%);
+  @include flex-grow(0);
+  @include flex-shrink(1);
 }
 
 .flex-block--wrapper {
@@ -31,7 +31,7 @@ body {
 
 .flex-block--row {
   @include flex-direction(row);
-  align-items: center;
+  @include align-items(center);
 }
 
 .flex-block--padding {
@@ -39,11 +39,11 @@ body {
 }
 
 .flex-block--centered {
-  align-items: center;
+  @include align-items(center);
   @include justify-content(center);
 }
 .flex-block--full {
-  flex-basis: 100%;
+  @include flex-basis(100%);
 }
 .flex-block--flex-end {
   @include justify-content(flex-end);
@@ -62,7 +62,7 @@ body {
 @media screen and (min-width:
   map-get($breakpoints, 'medium')) {
   .flex-block--grid {
-    flex-basis: 50%;
+    @include flex-basis(50%);
   }
   
   .img--project-piece {

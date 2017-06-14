@@ -7,7 +7,7 @@
 .label {
   position: absolute;
   @include flexbox();
-  align-items: center;
+  @include align-items(center);
   @include justify-content(center);
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba($secondary-brand-color, 0.8);
