@@ -17,6 +17,10 @@ body {
   @include flex-grow(0);
   @include flex-shrink(0);
 }
+.flex-block--grid__item{
+  @include flex-grow(0);
+  @include flex-shrink(0);
+}
 
 .flex-block--wrapper {
   max-width: $max-width;
