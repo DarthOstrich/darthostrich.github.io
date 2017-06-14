@@ -66,6 +66,8 @@ frameworks:
     image: github.png
   - name: gulp
     image: gulp.png
+  - name: webpack
+    image: webpack.svg
 
 #tools
 tools:
