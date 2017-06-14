@@ -12,10 +12,10 @@
   @include flex-wrap(wrap);
   @include justify-content(space-between);
   //aligns the last line of the grid to the left
-  // &::after {
-  //   content: '';
-  //   flex: auto; 
-  // }
+  &::after {
+    content: '';
+    @include flex(auto);
+  }
 }
 
 .skills-list-icon {
