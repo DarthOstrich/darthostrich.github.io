@@ -28,10 +28,10 @@ h1 {
     margin: 0 auto;
     transition: $animation;
   }
-  &:hover::after{
-    max-width: 100px;
-    transition: $animation;
-  }
+  // &:hover::after{
+  //   max-width: 100px;
+  //   transition: $animation;
+  // }
 }
 
 h2 {
