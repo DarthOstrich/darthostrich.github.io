@@ -17,7 +17,7 @@ body {
   @include flex-grow(0);
   @include flex-shrink(0);
 }
-.flex-block--grid__item{
+.flex-block--grid__item {
   @include flex-grow(0);
   @include flex-shrink(0);
 }
@@ -60,18 +60,14 @@ body {
   width: 100%;
 }
 
-
-
 //adjustment of the grid for flow
-@media screen and (min-width:
-  map-get($breakpoints, 'medium')) {
+@media screen and (min-width: map-get($breakpoints, 'medium')) {
   .flex-block--grid {
     @include flex-basis(50%);
   }
-  
+
   .img--project-piece {
     margin: 0 auto;
     width: 80%;
   }
 }
-

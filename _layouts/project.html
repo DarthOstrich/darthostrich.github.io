@@ -3,18 +3,15 @@ layout: main
 ---
 <img src="{{ site.image_path }}/{{ page.image_banner }}" class="img--centered">
 <section class="flex-block flex-block--wrapper flex-block--padding">
-	<article class="flex-block">
-			<h1 class="h1--project-label">
-				{% if page.external_url != null %}
-					<a href="{{page.external_url}}" class="link--light" target="_blank">{{ page.title }}</a>
-				{% else %}
-					{{ page.title }}
-				{% endif %}
-			</h1>
-
-
+  <h1 class="h1--project-label">
+    {% if page.external_url != null %}
+      <a href="{{page.external_url}}" class="link--light" target="_blank">{{ page.title }}</a>
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  </h1>
+	<article class="">
 		<h3> Description </h3>
-
 		<p> {{ page.description }} </p>
 
 		<h6 class="h6--role">
